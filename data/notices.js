@@ -18,10 +18,10 @@ const nts = {
             <p>${isTauriApp() ? 'Win12-desktop 是 Win12 网页版的桌面应用版本，' : 'Win12 网页版是一个开放源项目，'}<br />
             希望让用户在网络上预先体验 Windows 12,<br />
             内容可能与 Windows 12 正式版本不一致。<br />
-            使用标准网络技术,例如 HTML, CSS 和 JS<br />
-            此项目绝不附属于微软,且不应与微软操作系统或产品混淆,<br />
+            使用标准网络技术，例如 HTML, CSS 和 JS<br />
+            此项目绝不附属于微软，且不应与微软操作系统或产品混淆，<br />
             这也不是 Windows365 cloud PC<br />
-            本项目中微软、Windows和其他示范产品是微软公司的商标<br />
+            本项目中微软、Windows 和其他示范产品是微软公司的商标<br />
             本项目中 Android 是谷歌公司的商标。</p>`, 'nts.about'),
         btn: [
             { type: 'main', text: lang(lang('关闭', 'close'), 'close'), js: 'closenotice();' },
