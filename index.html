@@ -9,7 +9,7 @@
     (function () {
        const h = location.hostname;
        const isLocal = ['localhost', '127.0.0.1', '::1', ''].includes(h);
-      var isNetlify = h.includes('netlify.app');
+      const isNetlify = h.endsWith('.netlify.app');
       window.redirectUrl = isLocal || isNetlify ? './boot.html' : 'https://win12-online.github.io';
       location.replace(window.redirectUrl);
     })();
