@@ -4,6 +4,15 @@
  * 因此本文件必须在 desktop.js **之后**加载（lang / isTauriApp 在那里定义）。
  */
 const nts = {
+    'macos-web': {
+        cnt: `<p class="tit">MacOS-Web</p>
+            <p>MacOS-Web 是 puruvj 的开源作品，采用 MIT 许可证。</p>
+            <p>此产品不属于 win12-online，也不属于 Apple Inc.，并非云电脑。</p>`,
+        btn: [
+            { type: 'main', text: lang('打开', 'open'), js: "closenotice();openapp('macos', true);" },
+            { type: 'detail', text: lang('取消', 'cancel'), js: 'closenotice();' }
+        ]
+    },
     'about': {
         cnt: lang(`<p class="tit">${isTauriApp() ? '关于 Win12-desktop' : 'Win12 网页版'}</p>
             <p>${isTauriApp() ? 'Win12-desktop 是 Win12 网页版的桌面应用版本，' : 'Win12 网页版是一个开放源项目，'}<br />

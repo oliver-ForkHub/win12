@@ -1486,6 +1486,22 @@ const windowMarkup = `	<div class="window defender" data-min-width="800" style="
 			<!-- <iframe src="https://bilibili.com/" frameborder="0" style="width: 100%; height: 100%;" loading="lazy"></iframe> -->
 		</div>
 	</div>
+	<div class="window macos webapp">
+		<div class="resize-bar"></div>
+		<div class="titbar">
+			<img src="icon/macos.svg" class="icon">
+			<p>MacOS</p>
+			<div>
+				<a class="a wbtg red" onclick="hidewin('macos')"><i class="bi bi-x-lg"></i></a>
+				<a class="a wbtg max" onclick="maxwin('macos')"><i class="bi bi-app"></i></a>
+				<a class="a wbtg" onclick="minwin('macos')"><i class="bi bi-dash-lg"></i></a>
+			</div>
+		</div>
+		<div class="loadback">
+			<img src="icon/macos.svg" class="icon">
+		</div>
+		<div class="content" id="win-macos"></div>
+	</div>
 	
 	<div class="window copilot">
 		<div class="resize-bar"></div>

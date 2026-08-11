@@ -1048,7 +1048,11 @@ function syncTaskbarLayout() {
     $('#taskbar').css('width', 4 + count * (34 + 4));
 }
 
-function openapp(name) {
+function openapp(name, bypassPreOpenNotice = false) {
+    if (name == 'macos' && !bypassPreOpenNotice) {
+        shownotice('macos-web');
+        return;
+    }
     if (taskmgrTasks.findIndex(elt => elt.link == name) > -1 && apps.taskmgr.tasks.findIndex(elt => elt.link == name) == -1) {
         apps.taskmgr.tasks.splice(apps.taskmgr.tasks.length, 0, taskmgrTasks.find(elt => elt.link == name));
     }
