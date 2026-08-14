@@ -7,7 +7,7 @@ const nts = {
     'macos-web': {
         cnt: `<p class="tit">MacOS-Web</p>
             <p>MacOS-Web 是由 puruvj 开发的开源项目，遵循 MIT 许可证。</p>
-            <p>此产品不属于 win12-online，也不属于 Apple Inc.，并非云电脑。</p>`,
+            <p>此本项目与 win12-online、Apple Inc. 无任何关联，亦非云电脑服务。</p>`,
         btn: [
             { type: 'main', text: lang('打开', 'open'), js: "closenotice();openapp('macos', true);" },
             { type: 'detail', text: lang('取消', 'cancel'), js: 'closenotice();' }
